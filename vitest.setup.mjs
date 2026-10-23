@@ -1,3 +1,5 @@
+import "@testing-library/jest-dom/vitest";
+
 // Vitest's jsdom environment copies the typed-array / ArrayBuffer globals from
 // the jsdom realm onto `globalThis`, while Node's `Buffer` and the bundled
 // stellar-sdk keep using the main-realm constructors. That makes
